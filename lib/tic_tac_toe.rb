@@ -118,14 +118,17 @@ class TicTacToe
   end
   
   def winner
-    if won? && @board[won?(@board)[0]] == "X"
+  WIN_COMBINATIONS.detect do |win_combination|
+    if (@board[win_combination[0]]) == "X" && (@board[win_combination[1]]) == "X" && (@board[win_combination[2]]) == "X"
       return "X"
-    elsif won? && @board[won?(@board)[0]] == "O"
+    elsif (@board[win_combination[0]]) == "O" && (@board[win_combination[1]]) == "O" && (@board[win_combination[2]]) == "O"
       return "O"
     else
       nil
     end
   end
+end
+end
 
   def play
     until over?
