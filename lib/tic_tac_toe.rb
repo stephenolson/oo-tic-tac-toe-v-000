@@ -87,9 +87,6 @@ class TicTacToe
 
     if position_1 == "X" && position_2 == "X" && position_3 == "X" || position_1 == "O" && position_2 == "O" && position_3 == "O" # if index 0,1,2 (position 1,2,3) is all X or all O
       return win_combination
-    end
-  
-    end
 
     else
       false
