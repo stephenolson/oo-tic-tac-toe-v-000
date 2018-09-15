@@ -119,9 +119,9 @@ class TicTacToe
   
   def winner
     if won? && @board[won?(@board)[0]] == "X"
-      return "X" # X is the winne
+      return "X"
     elsif won? && @board[won?(@board)[0]] == "O"
-      return "O" #O is the winne
+      return "O"
     else
       nil
     end
