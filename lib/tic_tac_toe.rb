@@ -135,7 +135,7 @@ class TicTacToe
       puts "Congratulations " + winner + "!"
     elsif draw? 
       puts "Cat's Game!"
-    else
+    end
   end
   
   
